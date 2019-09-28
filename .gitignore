@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.idea
+data/android/metadata.json
+data/ios/metadata.json
+data/ios/icons/
+data/android/icons/
+data/ios/qrcode/
+data/android/qrcode/
