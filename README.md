@@ -10,3 +10,10 @@ Mobile platform is auto-detected, so only apps for current platform are shown, e
 <img src="docs/Screenshot_android.png"  width="500">
 
 Demo page is available [here](http://qooco-apps.herokuapp.com/) 
+
+To run this application simply:
+- clone this repo,
+- npm install from package.json root folder,
+- npm start 
+
+It will automatically start server and run its frontend at localhost:3000
