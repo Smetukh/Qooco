@@ -1,0 +1,64 @@
+<!-- Display content when sidebar is closed -->
+<ng-container *ngIf="_opened == false">     
+
+  <app-navbar (childEvent)="_opened=$event" [sideBarStatus] = "_opened"></app-navbar>
+  
+  <router-outlet></router-outlet>
+
+</ng-container>
+
+<!-- Container for sidebar(s) + page content -->        
+<ng-sidebar-container *ngIf="_opened == true" style="height:100vh">
+
+  <!-- A sidebar -->
+  <ng-sidebar
+    #sidebar
+    [(opened)]="_opened"
+    mode="over"
+    autoCollapseWidth = 270
+    class="demo-sidebar"
+    showBackdrop = true
+    closeOnClickOutside = true
+    position = 'right'>
+      <div style="background-color: #fff; height: 100%;  padding-right:10px; font-size: 20px; margin-top: 0; padding-top: 10px;">
+
+        <a (click)="_toggleSidebar()" style="float:right; padding-right:10px; margin-right:0"><i class="fa fa-times"></i></a>
+        <br>
+        <br>
+
+        <a closeSidebar style="padding: 30px;">Server menu</a>
+        <br>
+        <hr>
+        <br>
+
+        <ul>
+          <li>
+            <a  class="nav-link" routerLink="./login" routerLinkActive="active">Login</a>
+          </li>
+          <li>
+            <a  class="nav-link" routerLink="./register" routerLinkActive="active">Register</a>
+          </li>
+          <li>
+            <a  class="nav-link" routerLink="./secret1" routerLinkActive="active">Install Certificate</a>
+          </li>
+          <li>
+            <a  class="nav-link" href="http://appdev.qooco.com/cloudapp/AppUpdates/QoocoTalk/Android/AppUpdates2.txt" routerLinkActive="active" target="_blank">AppUpdates2.txt</a>
+          </li>
+        </ul>
+
+      </div>
+
+    </ng-sidebar>
+
+  <!-- Page content -->
+  <div ng-sidebar-content>     
+
+    <app-navbar (childEvent)="_opened=$event" [sideBarStatus] = "_opened"></app-navbar>
+
+    
+    <router-outlet></router-outlet>
+
+  </div>
+
+</ng-sidebar-container>
+

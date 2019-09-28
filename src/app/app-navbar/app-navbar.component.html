@@ -1,0 +1,39 @@
+<div class="container-fluid">
+  <nav id="navi">
+    <a 
+      *ngIf="this.navWidth > 567 && searchOpen || !searchOpen"
+      id="logo"
+      href="/">
+      <img
+        src="{{ logoSrc }}"
+        width="130"
+        height="40"              
+        alt="http://www.angular.io/"
+      >
+    </a>                 
+    <a 
+      style="float: right"
+      (click)="_toggleSidebar()">
+      <i class="fa fa-bars fa-2x"></i>
+    </a>
+    <a 
+      style="float: right; padding-right: 20px;">
+      <i *ngIf="!searchOpen" (click)="onSearchOpen()" class="fa fa-search"></i>
+    </a>
+
+    <div *ngIf="searchOpen" class="search">
+      <span class="fa fa-search"></span>
+      <span (click)="onSearchOpen()" class="fa fa-times-circle"></span>
+      <input 
+        [(ngModel)]="input" 
+        (keyup)="onKey(input)" 
+        placeholder="Search File" 
+        [autofocus]="autoFocus">
+    
+    </div>
+       
+
+  </nav>
+</div>
+
+<!-- <br> -->

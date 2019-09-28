@@ -1,0 +1,312 @@
+
+th {
+  text-align: center;
+  padding-right: 0;
+  }
+td {
+  text-align: center;
+  padding-right: 0;
+  vertical-align:middle;
+  }
+
+ul {
+  list-style-type: none;
+  line-height:200%
+}
+
+table tr:nth-child(4n-1), table tr:nth-child(4n)  {
+  background-color: #F8F8F8;
+}
+
+ul.dropdown-menu.show {
+  max-height: 300px;
+  overflow: auto;
+}
+.dropdown-menu {
+  min-width: 50px;
+  text-align: center;
+}
+
+.fa {
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+.fa-info-circle {
+    margin-left: 6px;
+    font-size: 18px;
+}
+
+.fa-code-branch {
+  font-size: 18px;
+}
+
+.fa-chevron-circle-down {
+  font-size: 28px;
+  color:#EF3E42;
+  transition: all 0.8s ease;
+}
+
+.fa-chevron-circle-down:hover {
+  transform: rotateZ(-90deg);
+}
+
+.fa-chevron-circle-up {
+  font-size: 28px;
+  color:#EF3E42;
+  transition: all 0.8s ease;
+}
+
+.fa-chevron-circle-up:hover {
+  transform: rotateZ(90deg);
+}
+
+.fa-angle-up {
+  margin-left: 5px;
+
+}
+
+.btn-sm.red-button {
+    color:#fff;
+    background-color:#EF3E42;
+}
+
+
+
+.clickable {
+    cursor: pointer;
+}
+
+/* .dropbtn {
+  background-color: #EF3E42;
+  color: white;
+  font-size: 16px;
+  padding-left: 17px;
+  padding-right: 17px;
+  height: 37px;
+  border: none;
+}
+
+.dropup {
+  position: relative;
+  display: inline-block;
+}
+
+.dropup-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  bottom: 37px;
+  z-index: 1;
+}
+
+.dropup-content a {
+  color: black;
+  padding-left: 30px;
+  padding-right: 30px;
+  display: block;
+  text-align: center;
+}
+
+.dropup-content a:hover {background-color: #ccc}
+
+.dropup:hover .dropup-content {
+  display: block;
+}
+
+.dropup:hover .dropbtn {
+  background-color: #495057;
+} */
+
+ul, menu, dir {
+  -webkit-padding-start: 0px;
+}
+
+#iconColumn {
+  width: 55px;
+  padding-left: 0;
+
+}
+
+#fileNameColumn {
+  width: 60%;
+  text-align: left;
+}
+
+#dateCreatedColumn {
+  width: 130px;
+}
+
+#expirationColumn {
+  width: 140px;
+}
+
+#sizeColumn {
+  width: 100px;
+}
+
+#installColumn {
+  text-align: left;
+  margin-right: 5px;
+}
+
+#installButton {
+      width: 125px;
+      /*text-align: left; */
+      margin-right: 5px;
+    }
+
+@media screen and (min-width: 769px) {
+
+
+  .hideRedButton {
+    display: none;
+  }
+
+}
+
+
+@media screen and (min-width: 568px) and (max-width: 768px) {
+
+
+    body {
+      padding:0;
+    }
+
+
+    th {
+      font-size: 12px;
+      text-align: center;
+      padding-right: 0;
+    }
+    td {
+	  font-size: 12px;
+	  font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      text-align: center;
+      padding-right: 0;
+      vertical-align:middle;
+    }
+
+    ul.dropdown-menu.show {
+      max-height:250px;
+      overflow:auto;
+    }
+
+    .navbar-fixed-top, .navbar-fixed-bottom, .navbar-static-top {
+      margin-left: 0;
+      margin-right: 0;
+      margin-bottom:0;
+    }
+
+    .hideRedButton {
+      display: none;
+    }
+
+    #dropdownMenu2 {
+      font-size: 12px;
+
+    }
+
+
+
+    #iconColumn {
+      width: 45px;
+      padding-left: 0;
+    }
+
+    #fileNameColumn {
+      width: 60%;
+      text-align: left;
+    }
+
+    #dateCreatedColumn {
+      width: 100px;
+    }
+
+    #expirationColumn {
+      width: 90px;
+    }
+
+    #sizeColumn {
+      width: 80px;
+    }
+
+    #installColumn {
+      text-align: left;
+      margin-right: 5px;
+    }
+
+    #installButton {
+      width: 95px;
+      text-align: left;
+      margin-right: 5px;
+    }
+}
+
+@media screen and (max-width: 567px) {
+    /*.container {
+      padding:0;
+      margin:0;
+    }*/
+
+    body {
+      padding:0;
+    }
+
+    th {
+      text-align: center;
+      font-size: 12px;
+      padding-right: 0;
+    }
+    td {
+      text-align: center;
+	  font-size: 12px;
+	  font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      padding-right: 0;
+      vertical-align:middle;
+    }
+
+    ul.dropdown-menu.show {
+      max-height: 300px;
+      overflow: auto;
+    }
+
+    .navbar-fixed-top, .navbar-fixed-bottom, .navbar-static-top {
+      margin-left: 0;
+      margin-right: 0;
+      margin-bottom:0;
+    }
+
+    .hideColumn {
+      display:none;
+    }
+
+    #dropdownMenu2 {
+      font-size: 12px;
+
+    }
+
+
+    #iconColumn {
+      width: 45px;
+      padding-left: 0;
+    }
+
+    #fileNameColumn {
+      width: 60%;
+      text-align: left;
+    }
+
+    #installColumn {
+      text-align: left;
+      margin-right: 5px;
+    }
+
+    #installButton {
+      width: 90px;
+      text-align: left;
+      margin-right: 5px;
+    }
+}
