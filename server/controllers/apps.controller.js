@@ -215,9 +215,6 @@ function getiOSApps(req, res) {
 	var iosPath = config.ios_apps_dir;
 	var ref = req.headers.referer;
 	var domain = ref ? ref.substring(ref.indexOf("://") + 3) : req.headers.host;
-	console.log('iosPath = ', iosPath)
-	console.log('ref = ', ref)
-	console.log('domain = ', domain)
 
 	readDir(iosPath, '.ipa', domain, (error, results) => {
 		if (error) {
@@ -229,7 +226,6 @@ function getiOSApps(req, res) {
 };
 
 function getAndroidApps(req, res) {
-	console.log('req res ', req, res)
 	var androidPath = config.android_apps_dir;
 	var ref = req.headers.referer;
 	var domain = ref ? ref.substring(ref.indexOf("://") + 3) : req.headers.host;
