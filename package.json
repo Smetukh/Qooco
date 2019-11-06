@@ -50,7 +50,7 @@
         "express-session": "^1.15.6",
         "font-awesome": "^4.7.0",
         "isomorphic-pkg-reader": "git+https://github.com/bozhyk/isomorphic-pkg-reader.git",
-        "mongoose": "^5.2.1",
+        "mongoose": "^5.7.5",
         "ng-sidebar": "^7.2.0",
         "ngx-infinite-scroll": "^6.0.1",
         "passport": "^0.4.0",
